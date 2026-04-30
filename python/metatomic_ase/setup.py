@@ -132,7 +132,7 @@ if __name__ == "__main__":
         install_requires.append(f"metatomic-torch @ file://{METATOMIC_TORCH}")
     else:
         # we are building from a sdist/installing from a wheel
-        install_requires.append("metatomic-torch >=0.1.11,<0.2.0")
+        install_requires.append("metatomic-torch")
 
     with open(os.path.join(ROOT, "AUTHORS")) as fd:
         authors = fd.read().splitlines()
